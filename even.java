@@ -6,13 +6,20 @@ class even
 		Scanner sc=new Scanner(System.in);
 		String value=sc.nextLine();
 		int num=Integer.parseInt(value);
-		if(num%2==0)
+		if(num>0)
 		{
-			System.out.println("Even");
+			if(num%2==0)
+			{
+				System.out.println("Even");
+			}
+			else
+			{
+				System.out.println("odd");
+			}
 		}
 		else
 		{
-			System.out.println("odd");
+			System.out.println("invalid");
 		}
 	}
 }
